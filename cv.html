@@ -3,42 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zac Valles</title>
-    <link rel="icon" href="favicon.png" type="image/png">
+    <title>Zac Valles CV</title>
     <style>
         body {
             font-family: "Utopia-std", serif;
-            font-size: 16px;
-            line-height: 24px;
-            padding: 20px;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #333;
             background-color: rgb(245, 243, 235);
+            margin: 0 auto;
+            padding: 40px;
             max-width: 800px;
         }
-        header {
-            text-align: left;
-            font-weight: 400;
+        h1, h2 {
+            font-weight: 600;
+        }
+        h1 {
             font-size: 36px;
-            font-style: normal;
-            padding: 20px;
-            max-width: 800px;
+            margin-bottom: 10px;
         }
-        header h1 {
-            text-align: left;
-            font-weight: normal;
-            font-size: 36px;
-            font-style: normal;
-            padding: 20px;
-            max-width: 800px;
+        h2 {
+            font-size: 24px;
+            margin-top: 40px;
+            margin-bottom: 10px;
         }
-        main {
-            padding: 20px;
-            max-width: 800px;
+        .timeline {
+            position: relative;
+            margin: 40px 0;
+            padding-left: 20px;
+            border-left: 2px solid #333;
+        }
+        .timeline-item {
+            margin-bottom: 20px;
+        }
+        .timeline-item h3 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .timeline-item p {
+            margin: 0;
         }
         footer {
-            text-align: left;
-            font-size: 0.9rem;
-            padding: 20px;
-            border-top: 1px solid #cccccc;
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+            margin-top: 40px;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
         }
         a {
             color: #007acc;
@@ -48,37 +60,59 @@
             text-decoration: underline;
         }
     </style>
-
 </head>
 <body>
     <header>
-        <h1>Curriculum Vitae</h1>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="cv.html">CV</a>
-        </nav>
+        <h1>Zac Valles</h1>
     </header>
     <main>
         <section>
             <h2>Education</h2>
-            <p>MS, Aerospace Engineering, University of Michigan, 2022</p>
-            <p>BS, Mechanical Engineering, University of California, Riverside 2020</p>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>University of Michigan</h3>
+                    <p>Master of Science in Aerospace Engineering, 2022</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>University of California, Riverside</h3>
+                    <p>Bachelor of Science in Mechanical Engineering, 2020</p>
+                </div>
+            </div>
         </section>
         <section>
             <h2>Professional Experience</h2>
-            <h3>Tesla (Senior Mechanical Design Engineer & Analyst, 2022 - Present)</h3>
-            <p>Responsible for design, analysis, testing, and production launch of powertrain and chassis components on Robotaxi. </p>
-            <h3>SpaceX (Associate Propulsion Analyst & Design Engineer, 2020 - 2021)</h3>
-            <p>Created safe operating margin envelope for torque vectoring system, running "ramp to failure" analysis with nonlinear materials to predict critical buckling loads.</p>
-            <p>Analyzed crack fatigue growth of high pressure engine lines with analysis to predict strains of random vibration loading. </p>
-            <h3>Astranis (Mechanical Design Intern, 2019)</h3>
-            <p>Developed flight hardware on Arcturus 1, Astranis's first production satellite - Star Tracker system. </p>
-            <h3>Rivian Automotive (Powertrain Intern, 2019)</h3>
-            <p>Proposed, created, and tested bearing preload </p>
-            <h3>Marine Hydrodynamics Laboratory, University of Michigan (Research Assistant, 2021-2022)</h3>
-            <p>Researched hydrodynamic characteristics of cavitating and ventilating (post flow separated) hydrofoils. </p> 
-            <p>Second author in 3 research papers on modeling and control of surface-piercing hydrofoils.</p>
-            <p>Led a team of three in test program for a surface-piercing hydrofoil.</p>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Tesla</h3>
+                    <p>
+                        As a Senior Mechanical Design Engineer and Analyst (2022 - Present), I was instrumental in designing and testing powertrain and chassis components for the Robotaxi program. My work encompassed everything from conceptual design to production launch, ensuring the seamless integration of cutting-edge technologies.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <h3>SpaceX</h3>
+                    <p>
+                        During my time as an Associate Propulsion Analyst and Design Engineer (2020 - 2021), I conducted advanced analyses on the torque vectoring system, predicting critical buckling loads through nonlinear materials analysis. I also spearheaded crack fatigue growth predictions for high-pressure engine lines under random vibration loading.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Astranis</h3>
+                    <p>
+                        As a Mechanical Design Intern in 2019, I developed flight hardware for Astranis's first production satellite, Arcturus 1. I focused specifically on the Star Tracker system, a critical component for satellite navigation and control.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Rivian Automotive</h3>
+                    <p>
+                        At Rivian Automotive (2019), I conceptualized, developed, and tested a bearing preload system that enhanced the efficiency and reliability of the powertrain components.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Marine Hydrodynamics Laboratory, University of Michigan</h3>
+                    <p>
+                        As a Research Assistant (2021-2022), I led hydrodynamic research on cavitating and ventilating hydrofoils. This work resulted in co-authorship of three papers on surface-piercing hydrofoil modeling and control. I also supervised a test program for a surface-piercing hydrofoil, managing a team of three researchers.
+                    </p>
+                </div>
+            </div>
         </section>
         <section>
             <h2>Contact</h2>
@@ -89,6 +123,4 @@
         <p>© 2024 Zac Valles</p>
     </footer>
 </body>
-    
 </html>
-
