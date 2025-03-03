@@ -90,15 +90,16 @@ We discussed the sources: motor noise, gear noise, and inverter noise. In the wo
 
 The “transfer path” refers to the path the vibration propagates through to reach the customer, perceived as tactile vibration felt in the steering wheel, in the seat, at any touch points in the cabin or heard as airborne noise. The transfer path can be divided into the “active side” and the “passive side”. In the automotive context, the active side refers to the gears, motor, and drive unit structure while the passive side refers to the chassis/body into the cabin. The isolator refers to an elastomeric component that serves as an energy barrier between the source and the receiver. 
 
-The key performance metric for an isolator can be defined with the transmissibility ratio (TR) which is a function of the mobilities (defined as the velocity response of a point to an applied force) of the receiver, isolator, and source. The basic physics involved here can be summarized with the following equation: 
+The key performance metric for an isolator can be defined with the transmissibility ratio (TR) which is a function of the mobilities (defined as the velocity response of a point to an applied force) of the receiver, isolator, and source. The basic physics involved here can be summarized with the following equation:
         
-TR = abs[(Y_receiver + Y_source)/(Y_isolator + Y_receiver + Y_source)]
+<p>TR = abs[(Y_receiver + Y_source)/(Y_isolator + Y_receiver + Y_source)] </p>
 
 Mobility is inversely proportionate to the dynamic stiffness of a structure, so effective isolation is essentially a minimization of the bushing to total structure (source stiffness + receiver) dynamic stiffness for any given frequency, which lays out the principles of good isolator design.
 
 <h3>Nuances of EV Powertrain Isolation:</h3>
 
 For a given source, we know the most effective isolation (lowest noise perceived in the cabin) results from minimizing the ratio of bushing stiffness to structure stiffness at every frequency. At a static level, we have to account for the fact that vibrations of the drive unit happen as a result of the drive unit generating torque which is reacted by the isolator — so the isolator performance must be evaluated under a specific preload. 
+        
 <p>At a dynamic level, things get much more interesting.  </p>
         
 <ul>
@@ -112,12 +113,15 @@ Through dynamic stiffness analysis of the active side, passive side and isolator
 <h3>What Makes NVH Design Extra Difficult:</h3>
 
 If drive unit NVH were measured in a vacuum, this optimization would be tricky, but solvable with enough maturity of the design — however noise and vibration signals are measured in vehicles that are also experiencing noise and vibration from the tires, the wind, the HVAC system, and the suspension system. 
-    
+
+        
 This intertwines the drive unit NVH performance with the NVH performance of the full vehicle, which is why in discussion of powertrain noises, all other noises are referred to as “masking noise”. There are frequency ranges where drive unit noise is imperceptible due to amplified aerodynamic or wheel-based noise that radiates through the cabin, however in some driving conditions at lower speeds, drive unit noise is perceivable and has a far higher NVH performance requirement. 
 
-To add further complexity, if you make 10,000 drive units and measure the sound profile across a torque and frequency range, the deviations in gear specifications result in shaft misalignment and tooth error, coupled with the build consistency of the vehicle (the transfer path), result in a measurable spread in noise. This is protected for in practice by setting some upper limits on what is acceptable NVH, by measuring the drive units rolling off the production line directly and rejecting limit samples. </p>
+        
+Considering a solution that solves in a high-volume production context (ie: to “solve NVH” for the 3, 4, or 5sigma vehicle out of a population) requires analyzing the statistical distribution of sound profiles over a torque and frequency range. Due to manufacturing variation in gear, shaft, bearing, and case dimensions, the resultant shaft alignment and tooth error can produce measurable differences in sound profiles which must be used to set limit sample rejection criteria.  
 
-To top it all off, sound profiles themselves are subjective in assessment. Some people find joy in hearing the high pitched, spaceship-esque sounds of the drive unit while another daily driver might take offense. This drives the requirements for NVH to be created with prototypes and subjective test rides, where drive conditions are assessed and pass or fail which then informs the subsequent design iterations.</p>
+        
+Finally, sound profiles themselves are subjective in assessment. Some people find joy in hearing the high pitched, spaceship-esque sounds of the drive unit while another daily driver might take offense. This drives the requirements for NVH to be created with prototypes and subjective test rides, where drive conditions are assessed and pass or fail which then informs the subsequent design iterations. </p>
 
     </main>
     <footer>
