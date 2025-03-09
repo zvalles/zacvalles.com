@@ -65,8 +65,7 @@
         <h1><a href="https://zacvalles.com" style="color: #185a9c;">Zac Valles</a></h1>
     </header>
     <main>
-<br><br>
-
+<br>
 <h2 style="font-size: 28px;">Silencing the Mechanical Symphony: The Art of Vibration Control</h2>
 
 <p> 
@@ -75,7 +74,7 @@ Next time you sit in an electric vehicle, listen closely. What you’ll hear as 
 <h3> <u>The Symphony of Noise: Motors, Gears, and Inverters</u> </h3>
 Picture a small mass being swung on a string, attached to a structure — starting slow at one revolution per second and speeding up all the way to 6,000 revolutions per second (6kHz). This is happening inside an electric vehicle’s powertrain, not at one spot, but dozens. It’s the key to understanding why your “silent” EV hums, buzzes, and whines.
 <br><br>
-<img src="image1.jpg" alt="Powertrain NVH Frequency Spectrum" style="width: 100%; height: auto;">
+<img src="image1.jpg" alt="Powertrain NVH Frequency Spectrum" style="width: 50%; height: auto;">
 <br><br>
 <b>Low frequencies (0-1000Hz): </b> At the lower end from 1 to 1000Hz, the structure would vibrate — inaudible but if you were to touch it you would feel a steady tremble similar to a phone buzzing in your pocket. This is the vibration only range, which transfer through anything rigidly attached to the structure. 
 <br><br>
@@ -110,7 +109,7 @@ Positioned upstream in the powertrain energy flow is the inverter — the maestr
 
 We’ve identified the primary noise sources: the motor, gears, and the inverter. An NVH engineer’s saying — “1 gram of mass at the source is worth 100 grams at the receiver” — highlights the leverage of source-level mitigation. Optimizing gear microgeometry to reduce tooth deflection, adding mass to the gear’s themselves, or implementing control strategies to minimize stator deformation offer significant NVH reduction, though these adjustments all come with tradeoffs of gear durability, wear, bearing durability, as well as motor thermal and electrical performance. While there are inherent limits to source reduction, choosing the right bias towards tradeoffs can pay huge dividends when comparing to the mass and cost expenditure required on the isolator, active, or passive side to meet NVH target requirements at the vehicle level. 
 <br><br>
-<img src="image3.jpg" alt="Transfer Path for a Vehicle" style="width: 100%; height: auto;">
+<img src="image3.jpg" alt="Transfer Path for a Vehicle" style="width: 50%; height: auto;">
 <br><br>
 The <b>transfer path</b> is the noise’s journey to you — the propagation route of vibrations from the source to the receiver, manifesting as tactile feedback (e.g., steering wheel, seat, door panels) or airborne noise in the cabin. It is comprised of the <b>active side</b> (gears, motor, drive unit structure), and the <b>passive side</b> (chassis, body, leading to cabin). The <b>isolator</b>, an elastomeric component, reduces the transmission of vibrations acting as an energy barrier. 
 <br><br>
@@ -124,9 +123,9 @@ Dynamically, the system becomes more complex:
 <br>
 <ul>
 <li><b>Frequency-Dependent Structures:</b> The active side (drive unit) and passive side (vehicle chassis/body) both exhibit frequency-dependent responses due to structural modes. Sweeping a constant-amplitude excitation across frequencies reveals peaks in measured vibrational or sound measurements in the cabin at these modes. Effective NVH design involves modeling these structural modes, and where overlaps or elevated responses occur, adjusting stiffness, mass, and damping properties can help optimize the frequency response. </li>
-<br><br>
+<br>
 <li><b>Variable Source Excitations:</b> Motor and gear excitations vary in amplitude across their frequency bands. Modeling softwares specific to gear and motor NVH can help to inform the non-uniform NVH profile, making the peaks known to designers for further refinement. </li>
-<br><br>
+<br>
 <li><b>Isolator Dynamics:</b> The isolator’s elastomeric properties introduce a frequency-dependent response caused by the resonance of the rubber legs. These peaks can be adjusted depending on the vehicle level response via durometer tuning or the inclusion of tuned rubber anti-resonance features. Preload can significantly alter this response, requiring the optimization to take place under realistic torque conditions. </li>
 </ul>
 <br>  
